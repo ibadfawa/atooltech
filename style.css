@@ -1,118 +1,249 @@
-/* Styling Dasar */
+/* --- Skema Warna & Font Modern --- */
+:root {
+    --primary-color: #00bcd4; /* Aksen Biru Cyan (Neutra) */
+    --secondary-color: #0d1a2d; /* Biru Sangat Gelap (Hampir Hitam) */
+    --text-light: #f4f4f9;
+    --text-dark: #333;
+    --bg-light: #f4f4f9;
+    --bg-dark: #1f2a3a; /* Background Utama Gelap */
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; /* Font modern yang bersih */
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f9;
+    color: var(--text-light);
+    background-color: var(--bg-dark);
 }
 
 .container {
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
     margin: auto;
-    overflow: hidden;
+    padding: 0 15px;
 }
 
-/* Header & Navigasi */
-header {
-    background: #0d1a2d; /* Warna gelap khas teknologi */
-    color: #fff;
-    padding-top: 15px;
-    min-height: 70px;
-    border-bottom: #00bcd4 3px solid; /* Aksen biru cyan */
+/* --- Tipografi & Judul --- */
+h2 {
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: var(--text-light);
 }
 
-header a {
-    color: #fff;
-    text-decoration: none;
+h2 strong {
+    color: var(--primary-color);
+}
+
+h3.section-title {
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: var(--primary-color);
+    font-weight: 600;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 0.85em;
 }
 
-header h1 {
-    float: left;
+/* --- Header & Navigasi --- */
+header {
+    background: var(--secondary-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
     margin: 0;
+    color: var(--text-light);
 }
 
-header nav {
-    float: right;
-    margin-top: 10px;
+.tech-tag {
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 0.9em;
 }
 
 header ul {
+    list-style: none;
+    display: flex;
     margin: 0;
     padding: 0;
-    list-style: none;
 }
 
-header li {
-    display: inline;
-    padding: 0 20px 0 20px;
+header li a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin-left: 30px;
+    padding: 5px 0;
+    transition: color 0.3s, border-bottom 0.3s;
 }
 
-/* Bagian Hero */
+header li a:hover {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.contact-btn {
+    background: var(--primary-color);
+    padding: 8px 15px !important;
+    border-radius: 5px;
+    font-weight: 600;
+    color: var(--secondary-color) !important;
+    transition: background 0.3s;
+}
+
+.contact-btn:hover {
+    background: #00a0ae;
+    border: none !important;
+}
+
+/* --- Bagian Hero --- */
 #hero {
-    background: #2c3e50; /* Warna abu gelap */
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
-    margin-bottom: 20px;
-}
-
-#hero h2 {
-    margin: 0 0 10px 0;
-    font-size: 36px;
+    text-align: left;
+    padding: 150px 0;
+    /* Tambahkan background image atau pola gelap jika perlu */
 }
 
 .cta-button {
     display: inline-block;
-    background: #00bcd4;
-    color: #fff;
-    padding: 10px 20px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 12px 25px;
     text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    transition: background 0.3s;
+    border-radius: 30px;
+    margin-top: 30px;
+    font-weight: 600;
+    transition: transform 0.3s;
 }
 
 .cta-button:hover {
-    background: #00a0ae;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 188, 212, 0.4);
 }
 
-/* Mengapa Kami */
+/* --- Layout Grid untuk Kartu (Modern) --- */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* --- Kartu Layanan --- */
+#services-preview {
+    padding: 60px 0;
+}
+
+.service-card {
+    background: var(--secondary-color);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-left: 3px solid var(--primary-color);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.service-card h4 {
+    font-size: 1.3em;
+    margin: 0 0 10px 0;
+    color: var(--text-light);
+}
+
+.service-card p {
+    color: #b0c4de; /* Warna abu muda untuk konten */
+}
+
+/* --- Bagian Mengapa Kami --- */
 #why-us {
-    padding: 20px;
+    padding: 80px 0;
+}
+
+.light-bg-sec {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+.light-bg-sec p, .light-bg-sec a {
+    color: var(--text-dark);
+}
+
+.grid-layout-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Kolom 2:1 */
+    gap: 50px;
+    align-items: center;
+}
+
+.stats-box {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 40px;
+    border-radius: 10px;
     text-align: center;
+    font-weight: 700;
 }
 
-.features {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 30px;
+.stat-number {
+    font-size: 3.5em;
+    margin: 0;
+    line-height: 1;
 }
 
-.feature-item {
-    flex: 1;
-    max-width: 300px;
-    padding: 20px;
-    margin: 10px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.stat-label {
+    font-size: 1.1em;
+    margin-top: 5px;
 }
 
-.feature-item h4 {
-    color: #0d1a2d;
+.read-more {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-top: 15px;
+    display: inline-block;
 }
 
-/* Footer */
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* --- Footer --- */
 footer {
-    background: #0d1a2d;
-    color: #fff;
+    background: var(--secondary-color);
     text-align: center;
-    padding: 15px 0;
-    margin-top: 20px;
-    font-size: 12px;
+    padding: 30px 0;
+    border-top: 1px solid rgba(0, 188, 212, 0.2);
+}
+
+footer p {
+    margin: 0;
+    color: #8899ac;
+    font-size: 0.9em;
 }
