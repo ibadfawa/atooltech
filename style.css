@@ -1,0 +1,118 @@
+/* Styling Dasar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header & Navigasi */
+header {
+    background: #0d1a2d; /* Warna gelap khas teknologi */
+    color: #fff;
+    padding-top: 15px;
+    min-height: 70px;
+    border-bottom: #00bcd4 3px solid; /* Aksen biru cyan */
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+/* Bagian Hero */
+#hero {
+    background: #2c3e50; /* Warna abu gelap */
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    margin-bottom: 20px;
+}
+
+#hero h2 {
+    margin: 0 0 10px 0;
+    font-size: 36px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #00bcd4;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #00a0ae;
+}
+
+/* Mengapa Kami */
+#why-us {
+    padding: 20px;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.feature-item {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+    margin: 10px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.feature-item h4 {
+    color: #0d1a2d;
+}
+
+/* Footer */
+footer {
+    background: #0d1a2d;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    font-size: 12px;
+}
