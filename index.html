@@ -3,59 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PT ATool iRet Technology - Keamanan Digital Terdepan</title>
+    <title>PT ATool iRet Technology - Keamanan Siber Terdepan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <div class="container">
-            <h1>PT ATool iRet Technology</h1>
+            <h1 class="logo">ATool iRet <span class="tech-tag">TECH</span></h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Beranda</a></li>
                     <li><a href="layanan.html">Layanan</a></li>
                     <li><a href="tentang.html">Tentang Kami</a></li>
-                    <li><a href="kontak.html">Kontak</a></li>
+                    <li><a href="kontak.html" class="contact-btn">Kontak</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section id="hero">
+        <section id="hero" class="dark-bg">
             <div class="container">
-                <h2>Memastikan Keamanan Infrastruktur Digital Anda</h2>
-                <p>Kami adalah perusahaan Penetration Tester yang berfokus pada pengujian keamanan untuk melindungi aset krusial bisnis Anda dari ancaman siber.</p>
-                <a href="layanan.html" class="cta-button">Lihat Layanan Kami</a>
+                <p class="subtitle">PENETRATION TESTING & CYBER SECURITY</p>
+                <h2>Kami Menguji. Kami Melindungi. <br> **Keamanan Digital** Anda Adalah Prioritas Kami.</h2>
+                <a href="layanan.html" class="cta-button">Jelajahi Solusi Kami <i class="fas fa-arrow-right"></i></a>
             </div>
         </section>
 
-        <section id="why-us">
-            <div class="container">
-                <h3>Mengapa Memilih Kami?</h3>
-                <div class="features">
-                    <div class="feature-item">
-                        <h4>Tim Bersertifikasi</h4>
-                        <p>Para ahli dengan sertifikasi industri terkemuka.</p>
-                    </div>
-                    <div class="feature-item">
-                        <h4>Metodologi Teruji</h4>
-                        <p>Menggunakan standar global seperti OWASP dan NIST.</p>
-                    </div>
-                    <div class="feature-item">
-                        <h4>Laporan Aksi Nyata</h4>
-                        <p>Memberikan rekomendasi perbaikan yang jelas dan terukur.</p>
-                    </div>
+        <section id="services-preview">
+            <div class="container grid-layout">
+                <div class="service-card">
+                    <i class="fas fa-globe service-icon"></i>
+                    <h4>Web App Pentest</h4>
+                    <p>Mencari kerentanan pada aplikasi web dengan standar OWASP Top 10.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt service-icon"></i>
+                    <h4>Mobile Security</h4>
+                    <p>Pengujian keamanan mendalam untuk aplikasi Android dan iOS.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-server service-icon"></i>
+                    <h4>Infrastructure Testing</h4>
+                    <p>Evaluasi keamanan jaringan internal dan eksternal Anda.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-us" class="light-bg-sec">
+            <div class="container grid-layout-2">
+                <div>
+                    <h3 class="section-title">Metodologi Kami</h3>
+                    <p>Kami menggunakan pendekatan berbasis risiko, didukung oleh tim yang memegang sertifikasi industri tingkat lanjut (OSCP, CEH).</p>
+                    <a href="tentang.html" class="read-more">Pelajari Lebih Lanjut <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="stats-box">
+                    <p class="stat-number">100+</p>
+                    <p class="stat-label">Proyek Keamanan Selesai</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="dark-bg">
         <div class="container">
-            <p>&copy; 2025 PT ATool iRet Technology. Hak Cipta Dilindungi.</p>
-            <p>Alamat: Jakarta, Indonesia | Email: info@atooliret.com</p>
+            <p>&copy; 2025 PT ATool iRet Technology | Keamanan Siber Indonesia</p>
         </div>
     </footer>
     
