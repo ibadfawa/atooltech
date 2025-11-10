@@ -3,101 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layanan Kami - PT ATool iRet Technology</title>
+    <title>PT ATool iRet Technology - Keamanan Siber Terdepan</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* CSS Tambahan Khusus Halaman Layanan */
-        .page-header {
-            background-color: var(--secondary-color);
-            padding: 80px 0 40px 0;
-            text-align: center;
-            border-bottom: 3px solid var(--primary-color);
-            margin-bottom: 40px;
-        }
-        
-        .service-detail-section {
-            padding: 40px 0;
-        }
-
-        .service-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 50px;
-            padding: 30px;
-            background: var(--bg-dark);
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
-            border-left: 5px solid var(--primary-color);
-        }
-        
-        .service-icon-detail {
-            font-size: 3em;
-            color: var(--primary-color);
-            margin-right: 30px;
-            padding-top: 5px;
-            min-width: 50px; /* Memastikan ikon tidak bergeser */
-        }
-        
-        .service-content h3 {
-            color: var(--primary-color);
-            font-size: 1.8em;
-            margin-top: 0;
-        }
-        
-        .service-content p {
-            color: #b0c4de;
-        }
-        
-        .benefit-list {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 20px;
-        }
-        
-        .benefit-list li {
-            background: var(--secondary-color);
-            padding: 10px 15px;
-            border-radius: 5px;
-            color: var(--text-light);
-            font-size: 0.95em;
-            border-left: 2px solid #00a0ae;
-        }
-        
-        .call-to-action-banner {
-            background: linear-gradient(90deg, var(--primary-color) 0%, #00a0ae 100%);
-            color: var(--secondary-color);
-            text-align: center;
-            padding: 50px 0;
-            margin-top: 50px;
-            border-radius: 10px;
-        }
-        
-        .call-to-action-banner h4 {
-            font-size: 2em;
-            margin-bottom: 15px;
-        }
-        
-        .banner-button {
-            background: var(--secondary-color);
-            color: var(--primary-color);
-            font-weight: 700;
-            padding: 12px 30px;
-            text-decoration: none;
-            border-radius: 30px;
-            transition: background 0.3s;
-        }
-        
-        .banner-button:hover {
-            background: #2c3e50;
-            color: var(--text-light);
-        }
-
-    </style>
 </head>
 <body>
 
@@ -107,7 +16,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Beranda</a></li>
-                    <li><a href="layanan.html" style="color:var(--primary-color); border-bottom: 2px solid var(--primary-color);">Layanan</a></li>
+                    <li><a href="layanan.html">Layanan</a></li>
                     <li><a href="tentang.html">Tentang Kami</a></li>
                     <li><a href="kontak.html" class="contact-btn">Kontak</a></li>
                 </ul>
@@ -116,90 +25,47 @@
     </header>
 
     <main>
-        <section class="page-header">
+        <section id="hero" class="dark-bg">
             <div class="container">
-                <p class="subtitle">SOLUSI KEAMANAN PROFESIONAL</p>
-                <h2>Layanan **Penetration Testing** Kami</h2>
-                <p style="color:#8899ac;">Pendekatan etis, mendalam, dan berbasis risiko untuk mengidentifikasi dan memitigasi celah keamanan digital Anda.</p>
+                <p class="subtitle">PENETRATION TESTING & CYBER SECURITY</p>
+                <h2>Kami Menguji. Kami Melindungi. <br> **Keamanan Digital** Anda Adalah Prioritas Kami.</h2>
+                <a href="layanan.html" class="cta-button">Jelajahi Solusi Kami <i class="fas fa-arrow-right"></i></a>
             </div>
         </section>
 
-        <section class="service-detail-section">
-            <div class="container">
-                
-                <div class="service-item">
-                    <i class="fas fa-desktop service-icon-detail"></i>
-                    <div class="service-content">
-                        <h3>Web Application Penetration Testing</h3>
-                        <p>Evaluasi komprehensif terhadap kerentanan pada aplikasi web, termasuk API dan *backend logic*. Kami mengikuti standar ketat seperti **OWASP Top 10** dan metodologi terkini.</p>
-                        <h4>Fokus Area:</h4>
-                        <ul class="benefit-list">
-                            <li>Injeksi SQL/XSS</li>
-                            <li>Broken Authentication</li>
-                            <li>Misconfiguration Server</li>
-                            <li>Business Logic Flaws</li>
-                        </ul>
-                    </div>
+        <section id="services-preview">
+            <div class="container grid-layout">
+                <div class="service-card">
+                    <i class="fas fa-globe service-icon"></i>
+                    <h4>Web App Pentest</h4>
+                    <p>Mencari kerentanan pada aplikasi web dengan standar OWASP Top 10.</p>
                 </div>
-
-                <div class="service-item">
-                    <i class="fas fa-mobile-alt service-icon-detail"></i>
-                    <div class="service-content">
-                        <h3>Mobile Application Security Assessment</h3>
-                        <p>Pengujian keamanan mendalam untuk aplikasi mobile (Android & iOS). Mencakup analisis kode statis/dinamis, keamanan data di perangkat, dan komunikasi jaringan.</p>
-                        <h4>Fokus Area:</h4>
-                        <ul class="benefit-list">
-                            <li>Data Storage Security (Insecure Data Storage)</li>
-                            <li>Client-Side Injection</li>
-                            <li>Reverse Engineering Assessment</li>
-                            <li>Inter-Process Communication (IPC)</li>
-                        </ul>
-                    </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt service-icon"></i>
+                    <h4>Mobile Security</h4>
+                    <p>Pengujian keamanan mendalam untuk aplikasi Android dan iOS.</p>
                 </div>
-
-                <div class="service-item">
-                    <i class="fas fa-server service-icon-detail"></i>
-                    <div class="service-content">
-                        <h3>Network & Infrastructure Penetration Testing</h3>
-                        <p>Pengujian terhadap perangkat keras, jaringan, firewall, dan sistem internal/eksternal perusahaan untuk menemukan titik masuk yang dapat dieksploitasi oleh penyerang.</p>
-                        <h4>Fokus Area:</h4>
-                        <ul class="benefit-list">
-                            <li>External Perimeter Testing</li>
-                            <li>Internal Network Mapping</li>
-                            <li>Wireless Security Assessment</li>
-                            <li>Firewall Rule Analysis</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="service-item">
-                    <i class="fas fa-user-secret service-icon-detail"></i>
-                    <div class="service-content">
-                        <h3>Red Team / Adversary Simulation</h3>
-                        <p>Simulasi serangan dunia nyata yang bertujuan untuk menguji pertahanan keamanan, proses respons insiden, dan kemampuan deteksi tim keamanan (Blue Team) Anda secara keseluruhan.</p>
-                        <h4>Fokus Area:</h4>
-                        <ul class="benefit-list">
-                            <li>Physical Penetration Testing (Opsional)</li>
-                            <li>Phishing & Social Engineering</li>
-                            <li>Lateral Movement Simulation</li>
-                            <li>Persistence Techniques</li>
-                        </ul>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <div class="call-to-action-banner">
-                    <h4>Siap Memperkuat Pertahanan Siber Anda?</h4>
-                    <p>Hubungi tim ahli kami untuk mendapatkan proposal pengujian keamanan yang disesuaikan dengan kebutuhan unik bisnis Anda.</p>
-                    <a href="kontak.html" class="banner-button">Jadwalkan Konsultasi Gratis <i class="fas fa-chevron-right"></i></a>
+                <div class="service-card">
+                    <i class="fas fa-server service-icon"></i>
+                    <h4>Infrastructure Testing</h4>
+                    <p>Evaluasi keamanan jaringan internal dan eksternal Anda.</p>
                 </div>
             </div>
         </section>
 
+        <section id="why-us" class="light-bg-sec">
+            <div class="container grid-layout-2">
+                <div>
+                    <h3 class="section-title">Metodologi Kami</h3>
+                    <p>Kami menggunakan pendekatan berbasis risiko, didukung oleh tim yang memegang sertifikasi industri tingkat lanjut (OSCP, CEH).</p>
+                    <a href="tentang.html" class="read-more">Pelajari Lebih Lanjut <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="stats-box">
+                    <p class="stat-number">100+</p>
+                    <p class="stat-label">Proyek Keamanan Selesai</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="dark-bg">
